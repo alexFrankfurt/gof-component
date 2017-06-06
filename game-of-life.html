@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="game-of-life">
+  <template>
+    <style>
+       :host {
+        display: block;
+        color: yellow;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+
+    <div class="game">
+      <h1>Game: </h1>
+      <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <div class="control-panel">
+      <button id="run" name="run">Run</button>
+      <button id="run-n" name="run-n">Run 20 times</button>
+      <button id="stop" name="stop">Stop</button>
+    </div>
+
+  </template>
+  <script src="w.js">
+    /**
+     * `game-of-life`
+     * Pluggable implementation of Conway&#39;s game of life
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+  </script>
+  <script src="common.js"></script>
+</dom-module>
